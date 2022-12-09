@@ -471,7 +471,15 @@
             "y": 431.6923076923077,
             "actors": [],
             "triggers": [],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "6019c9dd-99e0-497b-b107-94ba95006c4a"
+                    },
+                    "id": "fd812467-319b-4a89-911a-0bd48e27e2ce"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": [],
@@ -1410,7 +1418,8 @@
             "height": 18,
             "imageWidth": 400,
             "imageHeight": 144,
-            "filename": "Floor1Room2.png"
+            "filename": "Floor1Room2.png",
+            "tileColors": []
         },
         {
             "id": "1e5f9d6a-bdbc-43e6-8c34-22f5bb5dea05",
@@ -2473,12 +2482,20 @@
     "customEvents": [],
     "music": [
         {
-            "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
-            "name": "template",
-            "symbol": "song_template",
-            "filename": "template.mod",
+            "id": "6019c9dd-99e0-497b-b107-94ba95006c4a",
+            "name": "PazSong",
+            "symbol": "song_pazsong",
+            "filename": "PazSong.mod",
             "settings": {},
             "type": "mod"
+        },
+        {
+            "id": "db7c6370-640f-464d-adff-e6963518ccac",
+            "name": "PazSong",
+            "symbol": "song_pazsong_0",
+            "filename": "PazSong.uge",
+            "settings": {},
+            "type": "uge"
         }
     ],
     "sounds": [],
@@ -2583,9 +2600,9 @@
         "startDirection": "up",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1991.3333740234375,
-        "worldScrollY": 733.3333129882812,
-        "zoom": 275,
+        "worldScrollX": 67,
+        "worldScrollY": 0,
+        "zoom": 100,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
@@ -2613,9 +2630,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            819,
-            249,
-            249
+            592,
+            178,
+            178
         ],
         "showNavigator": true,
         "defaultFontId": "4bd653f0-e08d-424e-9e5b-c1f3aaa21e47",
